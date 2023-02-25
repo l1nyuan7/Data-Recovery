@@ -71,7 +71,7 @@ PNG图像格式文件由文件署名和数据快(chunk)组成。
 | Filter method      | 1 byte | 滤波器方法                                                   |
 | Interlace method   | 1 byte | 隔行扫描方法：0：非隔行扫描;1： Adam7(由Adam M. Costello开发的7遍隔行扫描方法) |
 
-![image-20211115154433724](image\image-20211115154433724.png)
+![image-20211115154433724](https://github.com/l1nyuan7/Data-Recovery/blob/main/image/image-20211115154433724.png)
 
 ##### 2、调色板数据块PLTE(palette chunk):
 
@@ -107,7 +107,7 @@ IDAT存放着图像真正的数据信息，因此，如果能够了解IDAT的结
 >
 > 因此，CRC码也总是AE 42 60 82
 
-![image-20211115155117283](image\image-20211115155117283.png)
+![image-20211115155117283](https://github.com/l1nyuan7/Data-Recovery/blob/main/image/image-20211115155117283.png)
 
 不难明白，由于数据块结构的定义，IEND数据块的长度总是0（00 00 00 00，除非人为加入信息），数据标识总是IEND（49 45 4E 44），因此，CRC码也总是AE 42 60 82。
 
