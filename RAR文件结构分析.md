@@ -22,7 +22,7 @@ RAR通常情况比ZIP压缩比高，但压缩/解压缩速度较慢。
 >
 > 0x52 0x61 0x72 0x21 0x1A 0x07 0x00
 
-![image-20211117090728517](image\image-20211117090728517.png)
+![image-20211117090728517](https://github.com/l1nyuan7/Data-Recovery/blob/main/image/image-20211117090728517.png)
 
 一个**RAR4.x**压缩文件由若干个可变长度的快组成
 
@@ -66,7 +66,7 @@ RAR通常情况比ZIP压缩比高，但压缩/解压缩速度较慢。
 
 第二块为压缩文件头(MAIN_HEAD)，和标记块一样
 
-![在这里插入图片描述](image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYW1pbmdfRA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://github.com/l1nyuan7/Data-Recovery/blob/main/image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYW1pbmdfRA==,size_16,color_FFFFFF,t_70)
 
 头类型是`0x73`表示压缩文件头块
 位标记为`0x0000` 没有位被置为1 ，如果块头被加密，则位标记应该为：0x8000
@@ -78,7 +78,7 @@ RAR文件格式及其各字段含义请参考： [RAR 5.0 archive format descrip
 
 接下来用rar文件来讲一下文件头部分的码流分析。
 
-![在这里插入图片描述](image\20200509145606294.png)
+![在这里插入图片描述](https://github.com/l1nyuan7/Data-Recovery/blob/main/image/20200509145606294.png)
 
 16进制软件使用winhex，hex值左边是低位，右边是高位，比如`52 61` 实际上就是`0x6152`
 
@@ -104,7 +104,7 @@ C7 88 67 36：FILE_CRC，4字节，文件的CRC值
 
 ## 结尾块
 
-![在这里插入图片描述](image\2020050915335642.png)
+![在这里插入图片描述](https://github.com/l1nyuan7/Data-Recovery/blob/main/image/2020050915335642.png)
 
 > 这个结尾块和标记块字节大小和分析方法是一样的。
 > C4 3D ：HEAD_CRC，2字节，从HEAD_TYPE到HEAD_SIZE的crc校验值
