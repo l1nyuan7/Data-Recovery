@@ -34,7 +34,7 @@ PNG图像格式文件由文件署名和数据快(chunk)组成。
 >
 > 十进制数：137 80 78 71 13 10 26 10
 
-![image-20211115151932459](image\image-20211115151932459.png)
+![image-20211115151932459](https://github.com/l1nyuan7/Data-Recovery/blob/main/image/image-20211115151932459.png)
 
 ### 数据块
 
